@@ -2,6 +2,21 @@
 
 Implementation of Analyzing and Improving the Image Quality of StyleGAN (https://arxiv.org/abs/1912.04958) in PyTorch
 
+## Train on Anime face dataset 
+training data (70k+ images with 64 x 64)
+
+![training data](https://i.imgur.com/WNoZZHt.png)
+
+>unzip -q crypko_data.zip -d ./dataset/
+
+>python prepare_data.py --out ./dataset/faces_lmdb --size 64 ./dataset/
+
+>python  train.py --size 64 --batch 16 ./dataset/faces_lmdb 
+
+after training **100k iterations **
+
+![](https://i.imgur.com/ZryD1oe.png)
+
 ## Notice
 
 I have tried to match official implementation as close as possible, but maybe there are some details I missed. So please use this implementation with care.
