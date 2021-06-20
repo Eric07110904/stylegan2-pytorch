@@ -13,6 +13,9 @@ training data (70k+ images with 64 x 64)
 
 >python  train.py --size 64 --batch 16 ./dataset/faces_lmdb 
 
+training process
+![](doc/training.gif)
+
 after training **100k iterations **
 
 ![](https://i.imgur.com/ZryD1oe.png)
